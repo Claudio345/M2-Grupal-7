@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Compra tu GiftCard y canjéala por tu Juego favorito!!</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">GiftCard $10</h5>
+                            <p class="card-text">Con la compra de esta giftcard puedes juegos con un valor maximo de 10 dólares.</p>
+                            <p class="card-text">Precio: $10.00</p>
+                            <input type="number" id="cantidad1" value="0">
+                            <button class="btn btn-primary" id="suma1">+</button>
+                            <button class="btn btn-secondary" id="resta1">-</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">GiftCard $20</h5>
+                            <p class="card-text">Con la compra de esta giftcard puedes comprar juegos con un valor maximo de 20 dólares.</p>
+                            <p class="card-text">Precio: $20.00</p>
+                            <input type="number" id="cantidad2" value="0">
+                            <button class="btn btn-primary" id="suma2">+</button>
+                            <button class="btn btn-secondary" id="resta2">-</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">GiftCard $30</h5>
+                            <p class="card-text">Con la compra de esta giftcard puedes comprar juegos con un valor maximo de 30 dólares.</p>
+                            <p class="card-text">Precio: $30.00</p>
+                            <input type="number" id="cantidad3" value="0">
+                            <button class="btn btn-primary" id="suma3">+</button>
+                            <button class="btn btn-secondary" id="resta3">-</button>
+                        </div>
+                    </div>
+                </div>
+                <details>
+                    <summary>Cantidad de productos en el carrito: <span id="cantidad-carrito">0</span></summary>
+                    <div class="card">
+                        <h5 class="card-title">Carrito de compras</h5>
+                        <p class="card-text">Productos en el carrito:</p>
+                        <ul id="productos-carrito"></ul>
+                        <p class="card-text">Total: <span id="total-carrito">0</span></p>
+                        <button class="btn btn-primary" id="pagar">Pagar</button>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-confirmacion" tabindex="-1" role="dialog" aria-labelledby="modal-confirmacionLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-confirmacionLabel">Su compra ya está en camino!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Su compra ha sido procesada con éxito.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>

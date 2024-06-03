@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9em;
+}
+
+#cantidad-carrito {
+    font-weight: bold;
+}
+
+#total-carrito {
+    font-weight: bold;
+}
+
+#productos-carrito {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#productos-carrito li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#productos-carrito li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,76 @@
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  background-color: #3752cc;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+main {
+  padding: 20px;
+  /* padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; */
+}
+.logo {
+  font-size: 48px; /*Esto es para aumentar el tamaño de fuente, 16px es el tamaño por defecto*/
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  text-align: center;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}

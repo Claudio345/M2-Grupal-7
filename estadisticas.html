@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estadísticas de Juegos PS4</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <style>
+    .back-button {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Estadísticas de Juegos PS4</h1>
+
+  <table id="juegos-table" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Juego</th>
+        <th>Ventas (millones)</th>
+        <th>Crítica</th>
+        <th>Año</th>
+        <th>Desarrolladora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>God of War (2018)</td>
+        <td>19.5</td>
+        <td>94</td>
+        <td>2018</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Spider-Man</td>
+        <td>20</td>
+        <td>87</td>
+        <td>2018</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Uncharted 4: A Thief's End</td>
+        <td>16.25</td>
+        <td>93</td>
+        <td>2016</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Horizon Zero Dawn</td>
+        <td>10</td>
+        <td>89</td>
+        <td>2017</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Gran Turismo Sport</td>
+        <td>5.5</td>
+        <td>70</td>
+        <td>2017</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Days Gone</td>
+        <td>8</td>
+        <td>71</td>
+        <td>2019</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Death Stranding</td>
+        <td>5</td>
+        <td>82</td>
+        <td>2019</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Ghost of Tsushima</td>
+        <td>8.1</td>
+        <td>83</td>
+        <td>2020</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>The Last of Us Part II</td>
+        <td>10</td>
+        <td>93</td>
+        <td>2020</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+      <tr>
+        <td>Ratchet & Clank: Rift Apart</td>
+        <td>1.1</td>
+        <td>85</td>
+        <td>2021</td>
+        <td>Sony Interactive Entertainment</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="index.html" class="back-button">
+    <button>Volver al Inicio</button>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#juegos-table').DataTable();
+    });
+  </script>
+
+</body>
+</html>
